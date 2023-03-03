@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="gr__shape2prog_csail_mit_edu"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+              <meta name="viewport" content="width=device-width, initial-scale=1">    <link rel="shortcut icon" href="http://shape2prog.csail.mit.edu/images/favicon.ico">
+        <meta name="description" content="Counterfactual Data-Augmented Sequential Recommendation">
+        <meta name="keywords" content="Counterfactual Data-Augmented, Sequential Recommendation">
+
+        <title>Sequential Recommendation</title>
+        <link rel="stylesheet" href="asset/font.css">
+        <link rel="stylesheet" href="asset/main.css">
+
+    </head>
+
+    <body data-gr-c-s-loaded="true">
+
+        <div class="outercontainer">
+            <div class="container">
+
+                <div class="content project_title">
+                    <h1>Data Augmented Sequential Recommendation based on Counterfactual Thinking</h1>
+                </div>
+
+                <!-- <div class="content project_headline">
+                    <center><h2>
+                      <font size="3">Anonymous Author</font>&nbsp;&nbsp;
+                   
+                </div> -->
+
+
+                
+
+
+                <div class="content">
+                    <div class="text">
+                        <h1>1. Abstract</h1>
+                        <p><font size=3>Sequential recommendation has recently attracted increasing attention from the industry and academic communities. While
+                            previous models have achieved remarkable successes, an important problem may still hinder their performances, that is, the sparsity
+                            of the real-world data. In this paper, we propose a novel counterfactual data augmentation framework to alleviate the problem of data
+                            sparsity. In specific, our framework contains a sampler model and an anchor model. The sampler model aims to generate high-quality
+                            user behavior sequences, while the anchor model is trained based on the original and new generated samples, and leveraged to provide
+                            the final recommendation list. To implement the sampler model, we firstly design four types of heuristic methods based on either random
+                            or frequency-based strategies. And then, to improve the quality of the generated sequences, we propose two learning-based samplers by
+                            discovering the decision boundaries or increasing the sample informativeness. At last, we build an RL based model to automatically
+                            determine where to edit the history behaviors and how many items should be replaced. Considering that the sampler model can be
+                            imperfect, we, at last, analyze the influence of the noisy information contained in the generated sequences on the anchor model in theory,
+                            and design a simple but effective method to better serve the anchor model. We conduct extensive experiments to demonstrate the
+                            effectiveness of our model based on nine real-world datasets.</font></p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="text">
+                        <h1>2. Illustration of Our Framework</h1>
+                        <div class="content project_headline">
+                        <div class="img" style="text-align:center">
+                            <img class="img_responsive" src="asset/intro.png" alt="Intro" style="margin:auto;max-width:80%">
+                        </div>
+                        <div class="text">
+                            <p><font size=3>Figure 1: An illustration of our framework for counterfactual data-augmented sequential recommendation and 
+							the sampler models.</font></p>
+                        </div>
+						<div class="content">
+						<h3>Contributions</h3>
+                            <p><ul class="download">
+							<font size=3>
+                                <li>We propose to build a data-augmentation sequential recommendation framework based on counterfactual
+                                thinking. </li>
+                                <li>We implement the above idea in seven ways,
+                                developing four heuristic-based, two learning-based and an
+                                RL-based samplers to generate counterfactual sequences. </li>
+                                <li>We theoretically analyze the noisy information in the counterfactual data and propose a simple but effective strategy
+                                to ensure the informativeness of the generated sequences.</li>
+                                <li>We conduct extensive experiments based on nine realworld datasets to verify our framework’s effectiveness and
+                                generality.</li>
+                            </font>
+                        </ul></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="text">
+                        <h1>3. Main Results</h1>
+                    </div>
+
+                    <div class="content project_headline">
+					<div class="text">
+                            <p><font size=3>Table 1: Overall comparison between the baselines and our models.</font></p>
+                        </div>
+                        <div class="img" style="text-align:center">
+                            <img class="img_responsive" src="asset/result.png" alt="result" style="margin:auto;max-width:90%">
+                        </div>
+                        
+                    </div>
+					
+                </div>
+				<div class="content">
+                    <div class="text">
+                        <h1>4. Code and Datasets</h1>
+
+						<h2> 4.1 Code <a href="https://drive.google.com/drive/folders/1TAyGGEf2L-y92CSXJ5hih4Vsj-mjrkj5?usp=sharing">[link:Google Driver]</font></a></h2>
+						
+						<div class="content project_headline">
+						<div class="text">
+                            <p><font size=3>Table 2: Structure of the code files [main program].</font></p>
+                        </div>
+						<div class="img" style="text-align:center">
+                            <img class="img_responsive" src="asset/code1.png" alt="result" style="margin:auto;max-width:90%">
+                        </div>
+					
+                        <div class="img" style="text-align:center">
+						<div class="text">
+                            <p><font size=3>Table 3: Structure of the code files [utils].</font></p>
+                        </div>
+                            <img class="img_responsive" src="asset/code2.png" alt="result" style="margin:auto;max-width:90%">
+                        </div>
+                        
+                        </div>
+                        <h2>4.2 Datasets <a href="https://drive.google.com/drive/folders/1yoH_YI4o5knC8hxlhJZmhorvl_NIrCiU?usp=sharing">[link:Google Driver]</a></font></h2>
+						<div class="content project_headline">
+						<div class="text">
+                            <p><font size=3>Table 4: Statistics of the datasets used in our experiments.</font></p>
+                        </div>
+                        <div class="img" style="text-align:center">
+                            <img class="img_responsive" src="asset/data.png" alt="result" style="margin:auto;max-width:90%">
+                        </div>
+                        
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="content">
+                    <div class="text">
+                        <h1>5. Usage</h1>
+						<p> <font size=4>5.1. Download the code</font></p>
+						<p> <font size=4>5.2. Download the dataset, and put it into dataset/dataset name/ folder.</font></p>
+						<p> <font size=4>5.3. Pre-train the sampler and anchor model.</font></p>
+						<font size=3>
+                        <p>Before you can run our program, you should run run_test_example.py or run_hyper.py to train Sampler model and Anchor model firstly. we provided source code for three models NARM, STAMP and SASRec.</p>
+                        <div class="img" style="text-align:center">
+                            <code>
+                                python run_test_example.py  --dataset diginetica --model NARM </br>
+                                python run_test_example.py  --dataset diginetica --model STAMP </br>
+                                python run_test_example.py  --dataset diginetica --model SASRec </br>
+                            </code>
+                        </div>
+                      
+                        <p>you should also save the trained model named Model name-dataset name.pth,in which the model name is one of the three model NARM, STAMP and SASRec,and put it in the folder savedTrainer/. we have trained some model as examples which could be used to train our method directly.</p>
+						<p> <font size=4>5.4. Run our framework</font></p>
+						<p>Run main.py file to train our model. You can configure some training parameters through the command line</p>
+                        <div class="img" style="text-align:center">
+                            <code>
+                                python main.py --sampler_model NARM --anchor_model STAMP --dataset amazon_instant_video --learning R
+                            </code>
+                        </div>
+						<p>where --learning denotes one of our methods 'R', 'MP','BF','FF','D','N' and 'RL' representing Random,Backward Frequency-based,Forward Frequency-based, Data-oriented, Model-oriented and Reinforcement-based methods respectively. --sample denotes the number of sample,--kappa denotes the confidence parameter, --iter denotes the iteration number, --tao denotes the temperature parameter, --index denotes the intervention index from back to front, we remove the negative sign from the value 
+						for the facilitation of the experiment</p>
+                        
+						</font>
+                    </div>
+                </div>
+               
+                <div class="content">
+                    <div class="text">
+                        <h1>6. Detailed parameter search ranges</h1>
+						
+						<div class="img" style="text-align:center">
+                            <img class="img_responsive" src="asset/range.png" alt="result" style="margin:auto;max-width:90%">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="content">
+                    <div class="text">
+                        <h1>7. Runtime Environment</h1>
+						<ul class="download">
+						<font size=3>
+                            <li><p>System:Linux dell-PowerEdge-R730</p></li>
+							<li><p>CPU: Intel(R) Xeon(R) CPU E5-2630 v4 @ 2.20GHz</p></li>
+							<li><p>CPU-Memory:25G</p></li>
+							<li><p>GPU:NVIDIA Corporation GV100 [TITAN V] (rev a1)</p></li>
+                            <li><p>GPU-Memory:12G</p></li>
+							<li><p>Pytorch: 1.7.0</p></li>
+							<li><p>CUDA:10.1</p></li>
+						</font>
+                        </ul>
+						
+                    </div>
+                </div>
+
+<div id="download_plus_animation"></div></body></html>
+
+
